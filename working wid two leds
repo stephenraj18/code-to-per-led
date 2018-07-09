@@ -1,0 +1,30 @@
+# code-to-per-led
+#include<stdlib.h>
+int led=6;
+int del=7;
+
+void setup() {
+pinMode(led,OUTPUT);
+pinMode(del,OUTPUT);
+}
+
+void loop() {
+  for(int i=0;i<10;i++)
+  {
+    if(i%2==0)
+    {
+  digitalWrite(led,LOW);
+  digitalWrite(del,HIGH);
+  delay(1000);
+    }
+    else
+  {
+  digitalWrite(led,HIGH);
+  digitalWrite(del,LOW);
+  delay(1000);
+  }
+  }
+    digitalWrite(del,HIGH);
+   digitalWrite(led,HIGH);
+  exit(0);
+}
