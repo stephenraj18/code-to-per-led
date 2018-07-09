@@ -1,0 +1,18 @@
+# code-to-per-led
+int ledpin=1;
+void setup() {
+pinMode(ledpin,OUTPUT);
+
+}
+
+void loop() {
+  int delaytimer =1000;
+  for(int i=0;i<10;i++)
+  {
+ digitalWrite(ledpin,HIGH); 
+  delay(delaytimer);
+   digitalWrite(ledpin,LOW); 
+  delay(delaytimer);
+  }
+  exit(0);
+}
