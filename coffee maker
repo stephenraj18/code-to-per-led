@@ -114,3 +114,8 @@ if(Firebase.getInt("order")==1){
     delay(1000);
     
 }
+void pulseCounter()
+{
+  // Increment the pulse counter
+  pulseCount++;
+}
