@@ -39,7 +39,8 @@ Serial.begin(115200);
   // Set up the status LED line as an output
   pinMode(statusLed, OUTPUT);
   digitalWrite(statusLed, HIGH);  // We have an active-low LED attached
-  
+  pinMode(relay1, OUTPUT);
+  digitalWrite(relay1, LOW);
   pinMode(sensorPin, INPUT);
   digitalWrite(sensorPin, HIGH);
 
